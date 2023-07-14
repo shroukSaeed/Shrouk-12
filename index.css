@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: center;
+
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 20px !important;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin: 2% 0 !important;
+}
+
+button:hover {
+    background-color: rgb(67, 129, 190) !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    transition: all .5s ease-in-out !important;
+
+}
+
+
+.container {
+    margin: 15px auto;
+    width: 1300px;
+    /* background-color: yellowgreen; */
+
+}
+
+img {
+    margin: 0;
+    /* overflow-clip-margin: content-box; */
+    vertical-align: middle;
+
+    max-width: 100%;
+}
+
+.img-wraper:hover img {
+    /* width: 100%; */
+    transform: scale(1.2);
+    /* overflow: hidden; */
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    transition: all .3s ease-in-out;
+
+}
+
+.img-holder {
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.more {
+    height: 79px;
+    width: 79px;
+}
+
+.descripion {
+    height: 0;
+    transform: translateY(18px);
+    position: absolute;
+    bottom: 0;
+    width: 430px;
+    background-color: rgba(67, 129, 190, 0.679);
+}
+
+.img-holder:hover .descripion {
+    height: max-content;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-3px);
+}
+
+.activeBtn {
+    background-color: rgb(67, 129, 190) !important;
+    color: #fff !important;
+}
+
+i {
+    cursor: pointer;
+}
+
+/* .new-container{
+    display: flex;
+    max-height: fit-content;
+    gap: 20px;
+} */
+
+.appcon {
+    display: none;
+    gap: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.webcon {
+    display: none;
+    gap: 20px;
+    height: fit-content;
+    width: fit-content;
+
+
+}
+
+.cardcon {
+    display: none;
+    gap: 20px;
+    height: fit-content;
+    width: fit-content;
+
+
+}
+
+
+.moveTop {
+    animation: moveTop .3s ease-in-out;
+}
+
+.moveRight {
+    animation: moveRight .3s ease-in-out;
+}
+
+.moveLeft {
+    animation: moveLeft .3s ease-in-out;
+}
+
+.moveRightUp {
+    animation: moveLeft .3s ease-in-out;
+}
+
+
+
+@keyframes moveTop {
+
+    0% {
+        top: 200px;
+        width: 0;
+        opacity: 0;
+    }
+    25%{
+        width: 20px;
+        opacity: .25;
+
+    }
+    50% {
+        top: 100px;
+        width: 40px;
+        opacity: 0.5;
+
+    }
+    75%{
+        width: 80;
+        opacity: .75;
+
+    }
+
+    100% {
+        top: 0px;
+        width: 100px;
+        opacity: 1;
+
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0px;
+        width: 0;
+        opacity: 0;
+        /* left: 0px; */
+    }
+    25%{
+        left: 25px;
+        width: 25px;
+        opacity: .25;
+
+    }
+    50%{
+        left: 50px;
+        width: 50px;
+        opacity: .50;
+
+    }
+    75%{
+        left: 75px;
+        width: 75px;
+        opacity:.75 ;
+
+    }
+    100% {
+        left: 100px;
+        width: 100px;
+        opacity:1 ;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 100px;
+        width: 0;
+        opacity: 0;
+    }
+    25%{
+        left: 25px;
+        width: 25px;
+        opacity: .25;
+    }
+    50%{
+        left: 50px;
+        width: 50px;
+        opacity: .5;
+    }
+    75%{
+        left: 75px;
+        width: 75px;
+        opacity: .75;
+    }
+    100% {
+        left: 0px;
+        width: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes moveRightUp {
+    0% {
+        left: 0px;
+        top: 100px;
+        width: 0;
+        opacity: 0;
+    }
+    25%{
+        left: 25px;
+        width: 25px;
+        opacity: .25;
+    }
+    50%{
+        left: 50px;
+        width: 50px;
+        opacity: .5;
+    }
+    75%{
+        left: 75px;
+        width: 75px;
+        opacity: .75;
+    }
+    100% {
+        left: 100;
+        top: 0;
+        width: 100px;
+        opacity: 1;
+    }
+}
